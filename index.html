@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz Flow - Innovation Meets Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+       (function() {
+          emailjs.init("-vuleKCOV2JeOTROu"); // Add your EmailJS public key here
+       })();
+    </script>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="background">
+        <div class="gradient-orb"></div>
+        <div class="gradient-orb"></div>
+        <div class="gradient-orb"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-brand">
+            <img src="logo.png" alt="Biz Flow Logo" class="nav-logo">
+            <span class="brand-name">Biz Flow</span>
+        </div>
+        
+        <div class="nav-links">
+            <div class="nav-group">
+                <a href="#home" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#products" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </a>
+                <a href="#clients" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Clients</span>
+                </a>
+            </div>
+            <div class="nav-group">
+                <a href="#career" class="nav-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Career</span>
+                </a>
+                <a href="#about" class="nav-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <div class="mobile-menu glass">
+        <div class="mobile-menu-header">
+            <img src="logo.png" alt="Biz Flow Logo" class="nav-logo">
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-items">
+            <!-- Mobile menu items will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="glass-section">
+            <h1>Welcome to Biz Flow</h1>
+            <p class="tagline">Where innovation meets business.</p>
+            
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <i class="fas fa-cloud"></i>
+                    <h3>SaaS-based Web Services</h3>
+                    <p>Streamline your operations with cutting-edge solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-card glass">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Applications</h3>
+                    <p>Engage your audience with user-friendly, high-performing apps designed for the future.</p>
+                </div>
+                <!-- Add other service cards similarly -->
+            </div>
+        </section>
+
+        <section id="products" class="glass-section">
+            <h2>Our Products</h2>
+            <div class="product-card glass">
+                <h3>Track-Bill</h3>
+                <div class="product-content">
+                    <div class="product-info">
+                        <p>Effortlessly manage and monitor your bills with Track-Bill, a versatile platform designed to keep your finances in order.</p>
+                        <a href="https://track-bill.com/" class="glass-button">Learn More</a>
+                    </div>
+                    <div class="product-charts">
+                        <canvas id="billChart"></canvas>
+                        <canvas id="durationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="glass-section">
+            <h2>Our Clients</h2>
+            <p class="section-intro">Trusted by industry leaders and innovative businesses across Bangladesh.</p>
+            
+            <div class="clients-grid">
+                <div class="client-card glass">
+                    <div class="client-content">
+                        <img src="national-accessories-logo.png" alt="National Accessories" class="client-logo">
+                        <div class="client-info">
+                            <h3>National Accessories</h3>
+                            <p>Leading manufacturer and supplier of high-quality automotive accessories</p>
+                            <div class="client-details">
+                                <span><i class="fas fa-check-circle"></i> Trusted Partner since 2020</span>
+                                <span><i class="fas fa-star"></i> Premium Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-testimonial">
+                        <blockquote>
+                            "Biz Flow's Track-Bill system has revolutionized our billing process, making it more efficient and error-free."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future clients -->
+                <div class="client-card glass add-client">
+                    <i class="fas fa-plus-circle"></i>
+                    <p>Your Company Could Be Here</p>
+                    <a href="#contact" class="glass-button">Partner With Us</a>
+                </div>
+            </div>
+
+            <div class="client-stats glass">
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <h4>50+</h4>
+                    <p>Active Clients</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>95%</h4>
+                    <p>Client Retention</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>24/7</h4>
+                    <p>Support</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="glass-section">
+            <h2>Career</h2>
+            <div class="career-intro">
+                <h3>Join the Biz Flow team and shape the future of business technology!</h3>
+                <p>We're on the lookout for passionate and talented individuals to grow with us.</p>
+            </div>
+
+            <div class="positions-grid">
+                <div class="position-card glass">
+                    <i class="fas fa-code"></i>
+                    <h4>Junior Web Developers</h4>
+                    <p>Kickstart your career by building dynamic and responsive websites with modern tools and frameworks.</p>
+                </div>
+                <div class="position-card glass">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Senior Programmers</h4>
+                    <p>Lead complex projects, solve challenging problems, and mentor the next generation of developers.</p>
+                </div>
+                <div class="position-card glass">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Figma Developers</h4>
+                    <p>Design stunning, user-centric interfaces that enhance user experiences across web and mobile platforms.</p>
+                </div>
+                <div class="position-card glass">
+                    <i class="fas fa-brain"></i>
+                    <h4>AI Model Developers</h4>
+                    <p>Innovate and implement AI-driven solutions to revolutionize business processes.</p>
+                </div>
+            </div>
+
+            <div class="cv-upload glass">
+                <div class="cv-upload-content">
+                    <div class="cv-upload-header">
+                        <i class="fas fa-file-upload"></i>
+                        <h3>Join Our Team</h3>
+                        <p>Drop your CV and become part of the Biz Flow journey!</p>
+                    </div>
+                    
+                    <form id="cvForm" class="cv-form">
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="cvFile" accept=".pdf,.doc,.docx" class="file-upload-input">
+                            <div class="file-upload-box">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <div class="upload-text">
+                                    <span class="main-text">Drag & Drop your CV here</span>
+                                    <span class="sub-text">or click to browse</span>
+                                </div>
+                                <span class="file-name"></span>
+                            </div>
+                        </div>
+                        <div class="applicant-info glass">
+                            <input type="text" id="applicantName" placeholder="Your Full Name" required>
+                            <input type="email" id="applicantEmail" placeholder="Your Email Address" required>
+                            <textarea id="applicantMessage" placeholder="Brief cover letter or message (optional)"></textarea>
+                        </div>
+                        <div class="upload-actions">
+                            <button type="submit" class="upload-button glass-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Submit Application</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="glass-section">
+            <h2>About us</h2>
+            <div class="team-grid">
+                <div class="team-member glass">
+                    <h3>Mohiuddin Hyder Khan</h3>
+                    <p class="position">Former head of IT, pedrollo nk limited</p>
+                    <div class="education">
+                        <p>MBA in digital technology management, royal roads University, british colombia, canada</p>
+                    </div>
+                    <div class="experience">
+                        <p>24 years experience on computer programming, system design, system implement, ERP</p>
+                    </div>
+                    <p class="contact">Contact No: +8801919-216460</p>
+                </div>
+
+                <div class="team-member glass">
+                    <h3>Dr. Aasim Ullah</h3>
+                    <p class="position">Assistant Professor, Department of Electrical and Electronic Engineering (EEE), International Islamic</p>
+                    <div class="education">
+                        <p>Ph.D. in Electric Power Engineering, School of Engineering, Computer & Mathematical Science. Auckland University of Technology, New Zealand.</p>
+                        <p>MSc in Electric Power Engineering, Norwegian University of Science & Technology, (NTNU), Norway</p>
+                    </div>
+                    <p class="contact">Contact No: +8801911-060435</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="glass-section">
+            <h2>Contact us</h2>
+            <div class="contact-info glass">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: bizflow@proton.me</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="addresses">
+                        <div class="address">
+                            <h4>Chittagong Office:</h4>
+                            <p>299, Nabab Siraj Ud Dawllah Road, Chandanpura, Chittagong.</p>
+                        </div>
+                        <div class="address">
+                            <h4>Dhaka Office:</h4>
+                            <p>Flat-C/1, Building 4, Joynogor Apartment Complex, Mirpur-13</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>© Biz Flow. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html> 
